@@ -1,0 +1,45 @@
+import java.util.Scanner;
+public class Assignment1Q9 {	
+public static void main(String[] args) {
+		
+
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Enter the numbers for Student 1 ");
+        int a = scan.nextInt();
+        int b = scan.nextInt();
+        int c = scan.nextInt();
+        int x = a+b+c;
+        
+        System.out.print("Enter the numbers for Student 2 ");
+        int d = scan.nextInt();
+        int e = scan.nextInt();
+        int f = scan.nextInt();
+        int y = d+e+f;
+        
+        System.out.print("Enter the numbers for Student 3");
+        int g = scan.nextInt();
+        int h = scan.nextInt();
+        int i = scan.nextInt();
+        int z = g+h+i;
+        
+        int totalmarks = a+b+c+d+e+f+g+h+i;
+        System.out.println("Total marks of all the students in all subjects : " +totalmarks);
+        
+        float Averagemarks = (x+y+z)/3;
+        System.out.println("Average marks of all the students in all subjects : "+Averagemarks);
+      
+        float subjectA = a+d+g;
+        System.out.println("Total marks scored by students in subject A : "+subjectA);
+        System.out.println(" Average marks scored by students in subject A : "+(subjectA)/3);
+        
+        int subjectB = b+e+h;
+        System.out.println("Total marks scored by students in subject B : "+subjectB);
+        System.out.println(" Average marks scored by students in subject B : "+(subjectB)/3);
+        
+        int subjectC = c+f+i;
+        System.out.println("Total marks scored by students in subject C : "+subjectC);
+        System.out.println(" Average marks scored by students in subject C : "+(subjectC)/3);
+        
+        scan.close();
+}
+}

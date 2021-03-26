@@ -1,0 +1,32 @@
+class CurrentAccount extends Assignment2Q3 {
+	 
+    public int getCash(int d) {
+    	return d;
+    	
+    }
+}
+class SavingsAccount extends Assignment2Q3 {
+
+   
+    public int getCash(int fixi) {
+    	return fixi;
+    }
+}
+public class Assignment2Q3 {
+    public int getCash(int dep, int fixi){
+    	int Total = dep + fixi;
+		return Total;
+
+    }
+    public static void main(String[] args) {
+    	int dep = 50000;
+    	int fixi = 10000;
+    	CurrentAccount c = new CurrentAccount();
+    	System.out.println("Cash credited in bank is : "+c.getCash(dep));
+    	SavingsAccount s = new SavingsAccount();
+    	System.out.println("Fixe d in bank is : "+s.getCash(fixi));
+    	Assignment2Q3 a = new Assignment2Q3();
+    	System.out.println("Total amount credited in bank is : "+a.getCash(dep,fixi));
+    	
+    }
+}

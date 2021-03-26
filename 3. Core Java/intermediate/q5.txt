@@ -1,0 +1,38 @@
+class Rectangle extends shapes {
+    @Override
+    public String draw() {
+    	System.out.println("This is rectangle");
+		return "Rectangle";}
+}
+
+class Line extends shapes{
+    @Override
+    public String draw() {
+    	System.out.println("This is line");
+		return "Straight line";}
+}
+
+class Cube extends shapes {
+    @Override
+    public String draw() {
+    	System.out.println("This is circle");
+		return "circle";}
+}
+
+
+abstract class shapes {
+
+    public abstract String draw();
+}
+
+public class Assignment2Q5 {
+
+    public static void main(String args[]) {
+        shapes shape = new Line();
+        shape.draw();
+        shape = new Rectangle();
+        shape.draw();
+        shape = new Cube();
+        shape.draw();
+    }
+}

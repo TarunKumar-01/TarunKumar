@@ -1,0 +1,29 @@
+class TaxAmount{
+    public double calculateTaxAmount(int ctc){
+    	double tax;
+    	if(ctc<=180000 &&  ctc>0) {
+    		tax=0;
+    		return tax;
+    	}
+    	else if(ctc>=181001 && ctc<300000) {
+    		tax=ctc*0.1;
+    		return tax;
+    	}
+    	else if(ctc>=300001 && ctc<500000) {
+    		tax=ctc*0.2;
+    		return tax;
+    	}
+    	else {
+    		tax=ctc*0.3;
+    		return tax;
+    	}
+    }
+}
+public class Assignment1Q5 {
+	  public static void main(String args[]) {
+		  TaxAmount t1 =new TaxAmount();
+		  double v=t1.calculateTaxAmount(380000);
+		  System.out.println("tax amount : "+ v);
+	  }
+	
+}

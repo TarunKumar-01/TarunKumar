@@ -1,0 +1,37 @@
+
+
+class ResultDeclaration{
+    public String declareResults( double n1, double n2,double n3) {
+		int counter = 0;
+    	if(n1 > 60) {
+        	counter++;
+        }
+        if(n2 > 60) {
+        	counter++;
+        }
+        if(n3 > 60) {
+        	counter++;
+        }
+        
+        if(counter == 3 ) {
+        	System.out.println("Result is Passed");
+        } else if(counter == 2) {
+        	System.out.println("Result is Promoted");
+        } else {
+        	System.out.println("Result is Failed");
+        }
+		return null;
+    }
+
+}
+public class Assignment1Q4 {
+    public static void main(String[] args) {
+    	
+    	ResultDeclaration r1 = new ResultDeclaration();
+    	{
+    		r1.declareResults(70, 70, 50);
+    		r1.declareResults(10,10,10);
+    		r1.declareResults(70, 70, 90);
+    	}
+    }
+}

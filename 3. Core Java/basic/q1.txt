@@ -1,0 +1,30 @@
+
+class ArmstrongOrNot {
+	public boolean armstrongCheck(int num) {
+		int q= num, temp=num;  
+		int c=0;
+		while(q>0)  {  
+		    int a=q%10;  
+		    q=q/10;  
+		    c=c+(a*a*a);  
+		    }  
+		if(temp==c) {
+			return true;
+		}
+		else {
+		return false;
+		}
+	}
+}
+public class Assignment1Q1 {
+public static void main(String [] args) {
+	ArmstrongOrNot a1= new ArmstrongOrNot();
+	boolean b= a1.armstrongCheck(371);
+	if(b==true) {
+		System.out.println("Armstrong number");
+	}
+	else {
+		System.out.println("Not an Armstrong number");
+	}
+}
+}
